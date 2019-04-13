@@ -1,7 +1,7 @@
 module.exports = {
     "id": "RolePermission",
     "properties": {
-        "roleId": {
+        "role_id": {
             "type": "string",
             "description": "Id of role"
         },
@@ -10,10 +10,9 @@ module.exports = {
             "description": "List of assigned permissions",
             "$ref": "Permission"
         },
-        "owner": {
-            "type": "object",
-            "description": "The microservice that ",
-            "$ref": "Application"
+        "owner_id": {
+            "type": "string",
+            "description": "The microservice that role is being configured on. "
         }
     }
 }

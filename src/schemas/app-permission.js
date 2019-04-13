@@ -1,10 +1,9 @@
 module.exports = {
     "id": "ApplicationPermission",
     "properties": {
-        "application": {
-            "type": "object",
-            "description": "The microservice that is being configured",
-            "$ref": "Application"
+        "application_id": {
+            "type": "string",
+            "description": "The microservice that is being configured"
         },
         "permissions": {
             "type": "array",
